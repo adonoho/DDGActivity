@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE809D6F142FC8B200C073B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE809D6E142FC8B200C073B2 /* UIKit.framework */; };
+		CE809D71142FC8B200C073B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE809D70142FC8B200C073B2 /* Foundation.framework */; };
+		CE809D73142FC8B200C073B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE809D72142FC8B200C073B2 /* CoreGraphics.framework */; };
+		CE809D79142FC8B200C073B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE809D77142FC8B200C073B2 /* InfoPlist.strings */; };
+		CE809D7B142FC8B200C073B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D7A142FC8B200C073B2 /* main.m */; };
+		CE809D7F142FC8B200C073B2 /* DDGActivityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D7E142FC8B200C073B2 /* DDGActivityAppDelegate.m */; };
+		CE809D82142FC8B200C073B2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE809D80142FC8B200C073B2 /* MainWindow.xib */; };
+		CE809D85142FC8B200C073B2 /* DDGActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D84142FC8B200C073B2 /* DDGActivityViewController.m */; };
+		CE809D88142FC8B300C073B2 /* DDGActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE809D86142FC8B300C073B2 /* DDGActivityViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE809D6A142FC8B200C073B2 /* DDGActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDGActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE809D6E142FC8B200C073B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE809D70142FC8B200C073B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE809D72142FC8B200C073B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE809D76142FC8B200C073B2 /* DDGActivity-Info.plist */ = {isa = PBXFileReference; path = "DDGActivity-Info.plist"; sourceTree = "<group>"; };
+		CE809D78142FC8B200C073B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE809D7A142FC8B200C073B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE809D7C142FC8B200C073B2 /* DDGActivity-Prefix.pch */ = {isa = PBXFileReference; path = "DDGActivity-Prefix.pch"; sourceTree = "<group>"; };
+		CE809D7D142FC8B200C073B2 /* DDGActivityAppDelegate.h */ = {isa = PBXFileReference; path = DDGActivityAppDelegate.h; sourceTree = "<group>"; };
+		CE809D7E142FC8B200C073B2 /* DDGActivityAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGActivityAppDelegate.m; sourceTree = "<group>"; };
+		CE809D81142FC8B200C073B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		CE809D83142FC8B200C073B2 /* DDGActivityViewController.h */ = {isa = PBXFileReference; path = DDGActivityViewController.h; sourceTree = "<group>"; };
+		CE809D84142FC8B200C073B2 /* DDGActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGActivityViewController.m; sourceTree = "<group>"; };
+		CE809D87142FC8B300C073B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DDGActivityViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE809D67142FC8B200C073B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE809D6F142FC8B200C073B2 /* UIKit.framework in Frameworks */,
+				CE809D71142FC8B200C073B2 /* Foundation.framework in Frameworks */,
+				CE809D73142FC8B200C073B2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE809D5F142FC8B200C073B2 = {
+			isa = PBXGroup;
+			children = (
+				CE809D74142FC8B200C073B2 /* DDGActivity */,
+				CE809D6D142FC8B200C073B2 /* Frameworks */,
+				CE809D6B142FC8B200C073B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE809D6B142FC8B200C073B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE809D6A142FC8B200C073B2 /* DDGActivity.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE809D6D142FC8B200C073B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE809D6E142FC8B200C073B2 /* UIKit.framework */,
+				CE809D70142FC8B200C073B2 /* Foundation.framework */,
+				CE809D72142FC8B200C073B2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE809D74142FC8B200C073B2 /* DDGActivity */ = {
+			isa = PBXGroup;
+			children = (
+				CE809D7D142FC8B200C073B2 /* DDGActivityAppDelegate.h */,
+				CE809D7E142FC8B200C073B2 /* DDGActivityAppDelegate.m */,
+				CE809D80142FC8B200C073B2 /* MainWindow.xib */,
+				CE809D83142FC8B200C073B2 /* DDGActivityViewController.h */,
+				CE809D84142FC8B200C073B2 /* DDGActivityViewController.m */,
+				CE809D86142FC8B300C073B2 /* DDGActivityViewController.xib */,
+				CE809D75142FC8B200C073B2 /* Supporting Files */,
+			);
+			path = DDGActivity;
+			sourceTree = "<group>";
+		};
+		CE809D75142FC8B200C073B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE809D76142FC8B200C073B2 /* DDGActivity-Info.plist */,
+				CE809D77142FC8B200C073B2 /* InfoPlist.strings */,
+				CE809D7A142FC8B200C073B2 /* main.m */,
+				CE809D7C142FC8B200C073B2 /* DDGActivity-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE809D69142FC8B200C073B2 /* DDGActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE809D8B142FC8B300C073B2 /* Build configuration list for PBXNativeTarget "DDGActivity" */;
+			buildPhases = (
+				CE809D66142FC8B200C073B2 /* Sources */,
+				CE809D67142FC8B200C073B2 /* Frameworks */,
+				CE809D68142FC8B200C073B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDGActivity;
+			productName = DDGActivity;
+			productReference = CE809D6A142FC8B200C073B2 /* DDGActivity.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE809D61142FC8B200C073B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Donoho Design Group, L.L.C.";
+			};
+			buildConfigurationList = CE809D64142FC8B200C073B2 /* Build configuration list for PBXProject "DDGActivity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE809D5F142FC8B200C073B2;
+			productRefGroup = CE809D6B142FC8B200C073B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE809D69142FC8B200C073B2 /* DDGActivity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE809D68142FC8B200C073B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE809D79142FC8B200C073B2 /* InfoPlist.strings in Resources */,
+				CE809D82142FC8B200C073B2 /* MainWindow.xib in Resources */,
+				CE809D88142FC8B300C073B2 /* DDGActivityViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE809D66142FC8B200C073B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE809D7B142FC8B200C073B2 /* main.m in Sources */,
+				CE809D7F142FC8B200C073B2 /* DDGActivityAppDelegate.m in Sources */,
+				CE809D85142FC8B200C073B2 /* DDGActivityViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE809D77142FC8B200C073B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE809D78142FC8B200C073B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE809D80142FC8B200C073B2 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE809D81142FC8B200C073B2 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		CE809D86142FC8B300C073B2 /* DDGActivityViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE809D87142FC8B300C073B2 /* en */,
+			);
+			name = DDGActivityViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE809D89142FC8B300C073B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE809D8A142FC8B300C073B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE809D8C142FC8B300C073B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DDGActivity/DDGActivity-Prefix.pch";
+				INFOPLIST_FILE = "DDGActivity/DDGActivity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE809D8D142FC8B300C073B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DDGActivity/DDGActivity-Prefix.pch";
+				INFOPLIST_FILE = "DDGActivity/DDGActivity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE809D64142FC8B200C073B2 /* Build configuration list for PBXProject "DDGActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE809D89142FC8B300C073B2 /* Debug */,
+				CE809D8A142FC8B300C073B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE809D8B142FC8B300C073B2 /* Build configuration list for PBXNativeTarget "DDGActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE809D8C142FC8B300C073B2 /* Debug */,
+				CE809D8D142FC8B300C073B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE809D61142FC8B200C073B2 /* Project object */;
+}
