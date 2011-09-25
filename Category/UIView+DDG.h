@@ -1,6 +1,6 @@
 //
-//  DDGActivityViewController.m
-//  DDGActivity
+//  UIView+DDG.h
+//  DDGActivityView
 //
 //  Created by Andrew Donoho on 2011/09/25.
 //  Copyright 2011 Donoho Design Group, L.L.C. All rights reserved.
@@ -43,44 +43,14 @@
  
  */
 
-#import "DDGActivityViewController.h"
+#import <UIKit/UIKit.h>
 
-#import "ModalViewController.h"
+extern NSString *const kActivityIndicatorKey;
 
-#import "UIView+DDG.h"
+@interface UIView (DDG)
 
-@implementation DDGActivityViewController
+@property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
 
-- (IBAction) turnOnAction:  (UIButton *) sender {
-    
-    self.view.activityIndicator = [[[UIActivityIndicatorView alloc] 
-                                    initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
-                                   autorelease];
-    [self.view addSubview: self.view.activityIndicator];
-    [self.view centerIndicator];
-    
-    [self.view.activityIndicator startAnimating];
-    
-} // -turnOnAction:
-
-
-- (IBAction) turnOffAction: (UIButton *) sender {
-    
-    [self.view.activityIndicator removeFromSuperview];
-    
-    self.view.activityIndicator = nil;
-    
-} // -turnOffAction:
-
-
-- (IBAction) modalViewAction:  (UIButton *) sender {
-
-    ModalViewController *mvc = [[[ModalViewController alloc] 
-                                 initWithNibName: @"ModalViewController" 
-                                 bundle: nil] autorelease];
-
-    [self presentModalViewController: mvc animated: YES];
-    
-} // -modalViewAction:
+- (void) centerIndicator;
 
 @end

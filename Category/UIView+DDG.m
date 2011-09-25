@@ -1,6 +1,6 @@
 //
-//  DDGActivityViewController.m
-//  DDGActivity
+//  UIView+DDG.m
+//  DDGActivityView
 //
 //  Created by Andrew Donoho on 2011/09/25.
 //  Copyright 2011 Donoho Design Group, L.L.C. All rights reserved.
@@ -43,44 +43,39 @@
  
  */
 
-#import "DDGActivityViewController.h"
-
-#import "ModalViewController.h"
+#import <objc/runtime.h>
 
 #import "UIView+DDG.h"
 
-@implementation DDGActivityViewController
+// Associated Reference keys.
+static const char *kActivityIndicatorARKey =  "ddgActivityIndicatorARKey";
+NSString *const    kActivityIndicatorKey   =    @"activityIndicator";
 
-- (IBAction) turnOnAction:  (UIButton *) sender {
-    
-    self.view.activityIndicator = [[[UIActivityIndicatorView alloc] 
-                                    initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
-                                   autorelease];
-    [self.view addSubview: self.view.activityIndicator];
-    [self.view centerIndicator];
-    
-    [self.view.activityIndicator startAnimating];
-    
-} // -turnOnAction:
+@implementation UIView (DDG)
 
+@dynamic activityIndicator;
 
-- (IBAction) turnOffAction: (UIButton *) sender {
+- (UIActivityIndicatorView *) activityIndicator {
     
-    [self.view.activityIndicator removeFromSuperview];
+    return objc_getAssociatedObject(self, kActivityIndicatorARKey);
     
-    self.view.activityIndicator = nil;
-    
-} // -turnOffAction:
+} // -activityIndicator
 
 
-- (IBAction) modalViewAction:  (UIButton *) sender {
-
-    ModalViewController *mvc = [[[ModalViewController alloc] 
-                                 initWithNibName: @"ModalViewController" 
-                                 bundle: nil] autorelease];
-
-    [self presentModalViewController: mvc animated: YES];
+- (void) setActivityIndicator: (UIActivityIndicatorView *) activityIndicator {
     
-} // -modalViewAction:
+    objc_setAssociatedObject(self, 
+                             kActivityIndicatorARKey, activityIndicator, 
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+} // -setActivityIndicator:
+
+
+- (void) centerIndicator {
+    
+    self.activityIndicator.center = [self convertPoint: self.center 
+                                              fromView: self.superview];
+    
+} // -centerIndicator
 
 @end

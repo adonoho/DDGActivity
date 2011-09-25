@@ -16,6 +16,9 @@
 		CE809D82142FC8B200C073B2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE809D80142FC8B200C073B2 /* MainWindow.xib */; };
 		CE809D85142FC8B200C073B2 /* DDGActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D84142FC8B200C073B2 /* DDGActivityViewController.m */; };
 		CE809D88142FC8B300C073B2 /* DDGActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE809D86142FC8B300C073B2 /* DDGActivityViewController.xib */; };
+		CE809D91142FC92900C073B2 /* UIView+DDG.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D90142FC92900C073B2 /* UIView+DDG.m */; };
+		CE809D98142FCF4100C073B2 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D96142FCF4100C073B2 /* ModalViewController.m */; };
+		CE809D99142FCF4100C073B2 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE809D97142FCF4100C073B2 /* ModalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +26,21 @@
 		CE809D6E142FC8B200C073B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE809D70142FC8B200C073B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE809D72142FC8B200C073B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CE809D76142FC8B200C073B2 /* DDGActivity-Info.plist */ = {isa = PBXFileReference; path = "DDGActivity-Info.plist"; sourceTree = "<group>"; };
+		CE809D76142FC8B200C073B2 /* DDGActivity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DDGActivity-Info.plist"; sourceTree = "<group>"; };
 		CE809D78142FC8B200C073B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE809D7A142FC8B200C073B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE809D7C142FC8B200C073B2 /* DDGActivity-Prefix.pch */ = {isa = PBXFileReference; path = "DDGActivity-Prefix.pch"; sourceTree = "<group>"; };
-		CE809D7D142FC8B200C073B2 /* DDGActivityAppDelegate.h */ = {isa = PBXFileReference; path = DDGActivityAppDelegate.h; sourceTree = "<group>"; };
+		CE809D7C142FC8B200C073B2 /* DDGActivity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDGActivity-Prefix.pch"; sourceTree = "<group>"; };
+		CE809D7D142FC8B200C073B2 /* DDGActivityAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGActivityAppDelegate.h; sourceTree = "<group>"; };
 		CE809D7E142FC8B200C073B2 /* DDGActivityAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGActivityAppDelegate.m; sourceTree = "<group>"; };
 		CE809D81142FC8B200C073B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		CE809D83142FC8B200C073B2 /* DDGActivityViewController.h */ = {isa = PBXFileReference; path = DDGActivityViewController.h; sourceTree = "<group>"; };
+		CE809D83142FC8B200C073B2 /* DDGActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGActivityViewController.h; sourceTree = "<group>"; };
 		CE809D84142FC8B200C073B2 /* DDGActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGActivityViewController.m; sourceTree = "<group>"; };
 		CE809D87142FC8B300C073B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DDGActivityViewController.xib; sourceTree = "<group>"; };
+		CE809D8F142FC92900C073B2 /* UIView+DDG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDG.h"; sourceTree = "<group>"; };
+		CE809D90142FC92900C073B2 /* UIView+DDG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDG.m"; sourceTree = "<group>"; };
+		CE809D95142FCF4100C073B2 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		CE809D96142FCF4100C073B2 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		CE809D97142FCF4100C073B2 /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 		CE809D5F142FC8B200C073B2 = {
 			isa = PBXGroup;
 			children = (
+				CE809D8E142FC92900C073B2 /* Category */,
 				CE809D74142FC8B200C073B2 /* DDGActivity */,
 				CE809D6D142FC8B200C073B2 /* Frameworks */,
 				CE809D6B142FC8B200C073B2 /* Products */,
@@ -86,6 +95,9 @@
 				CE809D84142FC8B200C073B2 /* DDGActivityViewController.m */,
 				CE809D86142FC8B300C073B2 /* DDGActivityViewController.xib */,
 				CE809D75142FC8B200C073B2 /* Supporting Files */,
+				CE809D95142FCF4100C073B2 /* ModalViewController.h */,
+				CE809D96142FCF4100C073B2 /* ModalViewController.m */,
+				CE809D97142FCF4100C073B2 /* ModalViewController.xib */,
 			);
 			path = DDGActivity;
 			sourceTree = "<group>";
@@ -99,6 +111,15 @@
 				CE809D7C142FC8B200C073B2 /* DDGActivity-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE809D8E142FC92900C073B2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CE809D8F142FC92900C073B2 /* UIView+DDG.h */,
+				CE809D90142FC92900C073B2 /* UIView+DDG.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +175,7 @@
 				CE809D79142FC8B200C073B2 /* InfoPlist.strings in Resources */,
 				CE809D82142FC8B200C073B2 /* MainWindow.xib in Resources */,
 				CE809D88142FC8B300C073B2 /* DDGActivityViewController.xib in Resources */,
+				CE809D99142FCF4100C073B2 /* ModalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +189,8 @@
 				CE809D7B142FC8B200C073B2 /* main.m in Sources */,
 				CE809D7F142FC8B200C073B2 /* DDGActivityAppDelegate.m in Sources */,
 				CE809D85142FC8B200C073B2 /* DDGActivityViewController.m in Sources */,
+				CE809D91142FC92900C073B2 /* UIView+DDG.m in Sources */,
+				CE809D98142FCF4100C073B2 /* ModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
