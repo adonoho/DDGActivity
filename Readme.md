@@ -85,4 +85,4 @@ Even though there is little likelihood that you will copy and past this code dir
 
 ### Where to get it?
 
-This code lives up on GitHub at: <http://github.com/adonoho/DDGActivity>. The announcement post to my blog is at: <http://blog.ddg.com/>.
+This code lives up on GitHub at: <http://bit.ly/DDGActivityGH>. The announcement post to my blog is at: <http://bit.ly/DDGActivity>.
