@@ -49,11 +49,11 @@
 
 @implementation ModalViewController
 
-- (IBAction) dismiss: (UIButton *) sender {
+- (IBAction) dismissAction: (UIButton *) sender {
     
     [self dismissModalViewControllerAnimated: YES];
     
-} // -dismiss:
+} // -dismissAction:
 
 
 #pragma mark - View lifecycle

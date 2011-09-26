@@ -47,6 +47,6 @@
 
 @interface ModalViewController : UIViewController
 
-- (IBAction) dismiss: (UIButton *) sender;
+- (IBAction) dismissAction: (UIButton *) sender;
 
 @end
