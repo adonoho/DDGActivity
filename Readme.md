@@ -1,4 +1,4 @@
-Object oriented languages have always allowed a programmer to add both methods and ivars to any class. Apple recommends you should not over-ride some Cocoa/Cocoa Touch classes. Hence, you cannot use inheritance to add ivars and methods to those classes. Of course, Objective-C has always offered the category mechanism as a way to add arbitrary methods to any class. But historically, categories cannot add ivars. Apple has addressed this in the modern Objective-C runtime with a mechanism called associatied references. I have tested this code on iOS v4+.
+Object oriented languages have always allowed a programmer to add both methods and ivars to any class. Apple recommends you should not over-ride some Cocoa/Cocoa Touch classes. Hence, you cannot use inheritance to add ivars and methods to those classes. Of course, Objective-C has always offered the category mechanism as a way to add arbitrary methods to any class. But historically, categories cannot add ivars. Apple has addressed this in the modern Objective-C runtime with a mechanism called associated references. I have tested this code on iOS v4+.
 
 The example app shows you how use an associated reference to add a `UIActivityIndicatorView` to every `UIView`, just as if it was any other ivar.
 
@@ -6,17 +6,17 @@ The example app shows you how use an associated reference to add a `UIActivityIn
 
 This category adds an `@property` and a method, `-centerIndicator` to a `UIView`. Here is the header:
 
-    #import <UIKit/UIKit.h>
-    
-    extern NSString *const kActivityIndicatorKey;
-    
-    @interface UIView (DDG)
-    
-    @property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
-    
-    - (void) centerIndicator;
-    
-    @end
+	#import <UIKit/UIKit.h>
+	
+	extern NSString *const kActivityIndicatorKey;
+	
+	@interface UIView (DDG)
+	
+	@property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
+	
+	- (void) centerIndicator;
+	
+	@end
 
 As we are using an `@property`, I also add a constant string key to support key-value coding. (I do this to allow the Xcode's function completion to suggest the right key. This, of course, ensures that you don't inadvertently add a typo to your key.)
 
@@ -24,18 +24,18 @@ As we are using an `@property`, I also add a constant string key to support key-
 
 Here I create an `activityIndicator` and add it to a `UIViewController`'s `UIView`.
 
-    self.view.activityIndicator = [[[UIActivityIndicatorView alloc] 
-                                    initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
-                                   autorelease];
-    [self.view addSubview: self.view.activityIndicator];
-    [self.view centerIndicator];
-    
-    [self.view.activityIndicator startAnimating];
+	self.view.activityIndicator = [[[UIActivityIndicatorView alloc] 
+									initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
+								   autorelease];
+	[self.view addSubview: self.view.activityIndicator];
+	[self.view centerIndicator];
+	
+	[self.view.activityIndicator startAnimating];
 
 Here I release the activity indicator:
 
-    [self.view.activityIndicator removeFromSuperview];
-    self.view.activityIndicator = nil;
+	[self.view.activityIndicator removeFromSuperview];
+	self.view.activityIndicator = nil;
 
 That is straightforward and is used no differently from any other ivar that contains a `UIActivityIndicatorView`.
 
@@ -51,27 +51,27 @@ The `activityIndicator` is an `@dynamic @property`. Hence, we need to implement 
 
 Here is the getter:
 
-    - (UIActivityIndicatorView *) activityIndicator {
-        
-        return objc_getAssociatedObject(self, kActivityIndicatorARKey);
-        
-    } // -activityIndicator
+	- (UIActivityIndicatorView *) activityIndicator {
+		
+		return objc_getAssociatedObject(self, kActivityIndicatorARKey);
+		
+	} // -activityIndicator
 
 Here is the setter:
 
-    - (void) setActivityIndicator: (UIActivityIndicatorView *) activityIndicator {
-        
-        objc_setAssociatedObject(self, 
-                                 kActivityIndicatorARKey, activityIndicator, 
-                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-        
-    } // -setActivityIndicator:
+	- (void) setActivityIndicator: (UIActivityIndicatorView *) activityIndicator {
+		
+		objc_setAssociatedObject(self, 
+								 kActivityIndicatorARKey, activityIndicator, 
+								 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+		
+	} // -setActivityIndicator:
 
 As you can see, the runtime provides a simple C-function to implement both accessors. The runtime identifies the associated reference by this C-string key:
 
-    static const char *kActivityIndicatorARKey =  "ddgActivityIndicatorARKey";
+	static const char *kActivityIndicatorARKey =  "ddgActivityIndicatorARKey";
 
-This string could be anything. I chose to namespace it with a DDG prefix and role suffix, `"ARKey"`. Both of these together insure that this symbol will not collide with an Apple name. (As I prefer readability in my code, I chose NOT to namespace the ivar `activityIndicator` itself. This namespace collision  is a risk I'm willing to take.) As these accessors apply to the instance, `self` is the appropriate object to pass to the function. Finally, the memory management policy is defined by a family of self descriptive constants:     `OBJC_ASSOCIATION_ASSIGN`, `OBJC_ASSOCIATION_RETAIN_NONATOMIC`, `OBJC_ASSOCIATION_COPY_NONATOMIC`, `OBJC_ASSOCIATION_RETAIN`, `OBJC_ASSOCIATION_COPY`. In the example, I've chosen `OBJC_ASSOCIATION_RETAIN_NONATOMIC` to match the `@property (nonatomic, retain)` declaration.
+This string could be anything. I chose to namespace it with a DDG prefix and role suffix, `"ARKey"`. Both of these together insure that this symbol will not collide with an Apple name. (As I prefer readability in my code, I chose NOT to namespace the ivar `activityIndicator` itself. This namespace collision  is a risk I'm willing to take.) As these accessors apply to the instance, `self` is the appropriate object to pass to the function. Finally, the memory management policy is defined by a family of self descriptive constants:	  `OBJC_ASSOCIATION_ASSIGN`, `OBJC_ASSOCIATION_RETAIN_NONATOMIC`, `OBJC_ASSOCIATION_COPY_NONATOMIC`, `OBJC_ASSOCIATION_RETAIN`, `OBJC_ASSOCIATION_COPY`. In the example, I've chosen `OBJC_ASSOCIATION_RETAIN_NONATOMIC` to match the `@property (nonatomic, retain)` declaration.
 
 ### `DDGActivity` Example Application.
 
