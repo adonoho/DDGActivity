@@ -19,6 +19,8 @@
 		CE809D91142FC92900C073B2 /* UIView+DDG.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D90142FC92900C073B2 /* UIView+DDG.m */; };
 		CE809D98142FCF4100C073B2 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D96142FCF4100C073B2 /* ModalViewController.m */; };
 		CE809D99142FCF4100C073B2 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE809D97142FCF4100C073B2 /* ModalViewController.xib */; };
+		CEC0CB1D1430B5EB0075D209 /* DDG Square 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC0CB1B1430B5EB0075D209 /* DDG Square 57x57.png */; };
+		CEC0CB1E1430B5EB0075D209 /* DDG Square.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC0CB1C1430B5EB0075D209 /* DDG Square.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		CE809D95142FCF4100C073B2 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		CE809D96142FCF4100C073B2 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		CE809D97142FCF4100C073B2 /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+		CEC0CB1B1430B5EB0075D209 /* DDG Square 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DDG Square 57x57.png"; sourceTree = "<group>"; };
+		CEC0CB1C1430B5EB0075D209 /* DDG Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DDG Square.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		CE809D75142FC8B200C073B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEC0CB1B1430B5EB0075D209 /* DDG Square 57x57.png */,
+				CEC0CB1C1430B5EB0075D209 /* DDG Square.png */,
 				CE809D76142FC8B200C073B2 /* DDGActivity-Info.plist */,
 				CE809D77142FC8B200C073B2 /* InfoPlist.strings */,
 				CE809D7A142FC8B200C073B2 /* main.m */,
@@ -176,6 +182,8 @@
 				CE809D82142FC8B200C073B2 /* MainWindow.xib in Resources */,
 				CE809D88142FC8B300C073B2 /* DDGActivityViewController.xib in Resources */,
 				CE809D99142FCF4100C073B2 /* ModalViewController.xib in Resources */,
+				CEC0CB1D1430B5EB0075D209 /* DDG Square 57x57.png in Resources */,
+				CEC0CB1E1430B5EB0075D209 /* DDG Square.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +316,7 @@
 				CE809D8D142FC8B300C073B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
