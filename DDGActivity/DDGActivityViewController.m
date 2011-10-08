@@ -1,3 +1,4 @@
+
 //
 //  DDGActivityViewController.m
 //  DDGActivity
@@ -49,30 +50,43 @@
 
 #import "DDGView.h"
 
+NSString *const kTestFlightTeamToken = @"8acf99279583d14642f6d297ae838cea_MzM1MDYyMDExLTEwLTA4IDE2OjE0OjI1LjU1MTA2Ng";
+
 @implementation DDGActivityViewController
 
 - (IBAction) turnOnAction:  (UIButton *) sender {
     
-    UIView<DDGView> *view = (UIView<DDGView> *)self.view;
-    
-    view.activityIndicator = [[[UIActivityIndicatorView alloc] 
-                               initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
-                              autorelease];
-    [view addSubview: view.activityIndicator];
-    [view centerIndicator];
-    
-    [view.activityIndicator startAnimating];
+    // For pedagogical purposes, check whether the @protocol is implemented.
+    if ([self.view conformsToProtocol: @protocol(DDGView)]) {
+        
+        UIView<DDGView> *view = (UIView<DDGView> *)self.view;
+        
+        if (!view.activityIndicator) {
+            
+            view.activityIndicator = [[[UIActivityIndicatorView alloc] 
+                                       initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
+                                      autorelease];
+            [view addSubview: view.activityIndicator];
+            [view centerIndicator];
+            
+            [view.activityIndicator startAnimating];
+        }
+    }
     
 } // -turnOnAction:
 
 
 - (IBAction) turnOffAction: (UIButton *) sender {
     
-    UIView<DDGView> *view = (UIView<DDGView> *)self.view;
-    
-    [view.activityIndicator removeFromSuperview];
-    
-    view.activityIndicator = nil;
+    // For pedagogical purposes, check whether the @protocol is implemented.
+    if ([self.view conformsToProtocol: @protocol(DDGView)]) {
+        
+        UIView<DDGView> *view = (UIView<DDGView> *)self.view;
+        
+        [view.activityIndicator removeFromSuperview];
+        
+        view.activityIndicator = nil;
+    }
     
 } // -turnOffAction:
 

@@ -45,9 +45,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "TestFlightProtocol.h"
+#import "DDGTestFlight.h"
 
-@interface DDGActivityViewController : UIViewController <TestFlight>
+extern NSString *const kTestFlightTeamToken;
+
+@interface DDGActivityViewController : UIViewController <DDGTestFlight>
 
 - (IBAction) turnOnAction:  (UIButton *) sender;
 - (IBAction) turnOffAction: (UIButton *) sender;

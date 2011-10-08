@@ -64,15 +64,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    UIView<DDGView> *view = (UIView<DDGView> *)self.view;
-    
-    view.activityIndicator = [[[UIActivityIndicatorView alloc] 
-                               initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
-                              autorelease];
-    [view addSubview: view.activityIndicator];
-    [view centerIndicator];
-    
-    [view.activityIndicator startAnimating];
+    // For pedagogical purposes, check whether the @protocol is implemented.
+    if ([self.view conformsToProtocol: @protocol(DDGView)]) {
+        
+        UIView<DDGView> *view = (UIView<DDGView> *)self.view;
+        
+        view.activityIndicator = [[[UIActivityIndicatorView alloc] 
+                                   initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
+                                  autorelease];
+        [view addSubview: view.activityIndicator];
+        [view centerIndicator];
+        
+        [view.activityIndicator startAnimating];
+    }
     
 } // -viewDidLoad
 
