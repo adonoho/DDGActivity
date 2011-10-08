@@ -45,7 +45,7 @@
 
 #import "DDGActivityAppDelegate.h"
 
-#import "DDGActivityViewController.h"
+#import "DDGActivityViewController+DDGTestFlight.h"
 
 @implementation DDGActivityAppDelegate
 
@@ -55,6 +55,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self.viewController takeOff: kTestFlightTeamToken];
      
     [self.window addSubview: self.viewController.view];
     [self.window makeKeyAndVisible];

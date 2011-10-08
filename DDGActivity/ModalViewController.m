@@ -45,6 +45,7 @@
 
 #import "ModalViewController.h"
 
+#import "DDGTestFlight.h"
 #import "DDGView.h"
 #import "UIView+DDGView.h"
 
@@ -52,6 +53,11 @@
 
 - (IBAction) dismissAction: (UIButton *) sender {
     
+    if ([self.parentViewController conformsToProtocol: @protocol(DDGTestFlight)]) {
+        
+        [(id<DDGTestFlight>)self.parentViewController 
+         passCheckpoint: [NSString stringWithFormat: @"%s", __PRETTY_FUNCTION__]];
+    }
     [self dismissModalViewControllerAnimated: YES];
     
 } // -dismissAction:
