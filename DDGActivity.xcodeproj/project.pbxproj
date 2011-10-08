@@ -7,137 +7,166 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE809D6F142FC8B200C073B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE809D6E142FC8B200C073B2 /* UIKit.framework */; };
-		CE809D71142FC8B200C073B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE809D70142FC8B200C073B2 /* Foundation.framework */; };
-		CE809D73142FC8B200C073B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE809D72142FC8B200C073B2 /* CoreGraphics.framework */; };
-		CE809D79142FC8B200C073B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE809D77142FC8B200C073B2 /* InfoPlist.strings */; };
-		CE809D7B142FC8B200C073B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D7A142FC8B200C073B2 /* main.m */; };
-		CE809D7F142FC8B200C073B2 /* DDGActivityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D7E142FC8B200C073B2 /* DDGActivityAppDelegate.m */; };
-		CE809D82142FC8B200C073B2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE809D80142FC8B200C073B2 /* MainWindow.xib */; };
-		CE809D85142FC8B200C073B2 /* DDGActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D84142FC8B200C073B2 /* DDGActivityViewController.m */; };
-		CE809D88142FC8B300C073B2 /* DDGActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE809D86142FC8B300C073B2 /* DDGActivityViewController.xib */; };
-		CE809D91142FC92900C073B2 /* UIView+DDG.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D90142FC92900C073B2 /* UIView+DDG.m */; };
-		CE809D98142FCF4100C073B2 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE809D96142FCF4100C073B2 /* ModalViewController.m */; };
-		CE809D99142FCF4100C073B2 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE809D97142FCF4100C073B2 /* ModalViewController.xib */; };
-		CEC0CB1D1430B5EB0075D209 /* DDG Square 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC0CB1B1430B5EB0075D209 /* DDG Square 57x57.png */; };
-		CEC0CB1E1430B5EB0075D209 /* DDG Square.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC0CB1C1430B5EB0075D209 /* DDG Square.png */; };
+		CE4808A41440A5D7001DD09F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4808A31440A5D7001DD09F /* UIKit.framework */; };
+		CE4808A61440A5D7001DD09F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4808A51440A5D7001DD09F /* Foundation.framework */; };
+		CE4808A81440A5D7001DD09F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4808A71440A5D7001DD09F /* CoreGraphics.framework */; };
+		CE4808AE1440A5D7001DD09F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE4808AC1440A5D7001DD09F /* InfoPlist.strings */; };
+		CE4808B01440A5D7001DD09F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4808AF1440A5D7001DD09F /* main.m */; };
+		CE4808B41440A5D7001DD09F /* DDGActivityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4808B31440A5D7001DD09F /* DDGActivityAppDelegate.m */; };
+		CE4808B71440A5D7001DD09F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4808B51440A5D7001DD09F /* MainWindow.xib */; };
+		CE4808BA1440A5D7001DD09F /* DDGActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4808B91440A5D7001DD09F /* DDGActivityViewController.m */; };
+		CE4808BD1440A5D7001DD09F /* DDGActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4808BB1440A5D7001DD09F /* DDGActivityViewController.xib */; };
+		CE5150881440A6D40020E2AA /* DDGActivityViewController+TestFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5150851440A6D40020E2AA /* DDGActivityViewController+TestFlight.m */; };
+		CE5150891440A6D40020E2AA /* UIView+DDGView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5150871440A6D40020E2AA /* UIView+DDGView.m */; };
+		CE51508D1440A6F50020E2AA /* DDG Square 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = CE51508B1440A6F50020E2AA /* DDG Square 57x57.png */; };
+		CE51508E1440A6F50020E2AA /* DDG Square.png in Resources */ = {isa = PBXBuildFile; fileRef = CE51508C1440A6F50020E2AA /* DDG Square.png */; };
+		CE5150921440A8070020E2AA /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE51508F1440A8070020E2AA /* ModalViewController.xib */; };
+		CE5150931440A8070020E2AA /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5150911440A8070020E2AA /* ModalViewController.m */; };
+		CE72DB761440B6A100EC1977 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE72DB721440B6A100EC1977 /* libTestFlight.a */; };
+		CE72DB771440B6A100EC1977 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE72DB731440B6A100EC1977 /* README.txt */; };
+		CE72DB781440B6A100EC1977 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE72DB741440B6A100EC1977 /* release_notes.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE809D6A142FC8B200C073B2 /* DDGActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDGActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE809D6E142FC8B200C073B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CE809D70142FC8B200C073B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CE809D72142FC8B200C073B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CE809D76142FC8B200C073B2 /* DDGActivity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DDGActivity-Info.plist"; sourceTree = "<group>"; };
-		CE809D78142FC8B200C073B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE809D7A142FC8B200C073B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE809D7C142FC8B200C073B2 /* DDGActivity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDGActivity-Prefix.pch"; sourceTree = "<group>"; };
-		CE809D7D142FC8B200C073B2 /* DDGActivityAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGActivityAppDelegate.h; sourceTree = "<group>"; };
-		CE809D7E142FC8B200C073B2 /* DDGActivityAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGActivityAppDelegate.m; sourceTree = "<group>"; };
-		CE809D81142FC8B200C073B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		CE809D83142FC8B200C073B2 /* DDGActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGActivityViewController.h; sourceTree = "<group>"; };
-		CE809D84142FC8B200C073B2 /* DDGActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGActivityViewController.m; sourceTree = "<group>"; };
-		CE809D87142FC8B300C073B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DDGActivityViewController.xib; sourceTree = "<group>"; };
-		CE809D8F142FC92900C073B2 /* UIView+DDG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDG.h"; sourceTree = "<group>"; };
-		CE809D90142FC92900C073B2 /* UIView+DDG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDG.m"; sourceTree = "<group>"; };
-		CE809D95142FCF4100C073B2 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
-		CE809D96142FCF4100C073B2 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
-		CE809D97142FCF4100C073B2 /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
-		CEC0CB1B1430B5EB0075D209 /* DDG Square 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DDG Square 57x57.png"; sourceTree = "<group>"; };
-		CEC0CB1C1430B5EB0075D209 /* DDG Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DDG Square.png"; sourceTree = "<group>"; };
+		CE0D7D671440AF6B00664EF3 /* TestFlightProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlightProtocol.h; sourceTree = "<group>"; };
+		CE0D7D681440B06300664EF3 /* DDGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGView.h; sourceTree = "<group>"; };
+		CE48089F1440A5D7001DD09F /* DDGActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDGActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4808A31440A5D7001DD09F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE4808A51440A5D7001DD09F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE4808A71440A5D7001DD09F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE4808AB1440A5D7001DD09F /* DDGActivity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DDGActivity-Info.plist"; sourceTree = "<group>"; };
+		CE4808AD1440A5D7001DD09F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE4808AF1440A5D7001DD09F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE4808B11440A5D7001DD09F /* DDGActivity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDGActivity-Prefix.pch"; sourceTree = "<group>"; };
+		CE4808B21440A5D7001DD09F /* DDGActivityAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGActivityAppDelegate.h; sourceTree = "<group>"; };
+		CE4808B31440A5D7001DD09F /* DDGActivityAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGActivityAppDelegate.m; sourceTree = "<group>"; };
+		CE4808B61440A5D7001DD09F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		CE4808B81440A5D7001DD09F /* DDGActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGActivityViewController.h; sourceTree = "<group>"; };
+		CE4808B91440A5D7001DD09F /* DDGActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGActivityViewController.m; sourceTree = "<group>"; };
+		CE4808BC1440A5D7001DD09F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DDGActivityViewController.xib; sourceTree = "<group>"; };
+		CE5150841440A6D40020E2AA /* DDGActivityViewController+TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDGActivityViewController+TestFlight.h"; sourceTree = "<group>"; };
+		CE5150851440A6D40020E2AA /* DDGActivityViewController+TestFlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDGActivityViewController+TestFlight.m"; sourceTree = "<group>"; };
+		CE5150861440A6D40020E2AA /* UIView+DDGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDGView.h"; sourceTree = "<group>"; };
+		CE5150871440A6D40020E2AA /* UIView+DDGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDGView.m"; sourceTree = "<group>"; };
+		CE51508B1440A6F50020E2AA /* DDG Square 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DDG Square 57x57.png"; sourceTree = "<group>"; };
+		CE51508C1440A6F50020E2AA /* DDG Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DDG Square.png"; sourceTree = "<group>"; };
+		CE51508F1440A8070020E2AA /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+		CE5150901440A8070020E2AA /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		CE5150911440A8070020E2AA /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		CE72DB721440B6A100EC1977 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		CE72DB731440B6A100EC1977 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		CE72DB741440B6A100EC1977 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		CE72DB751440B6A100EC1977 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CE809D67142FC8B200C073B2 /* Frameworks */ = {
+		CE48089C1440A5D7001DD09F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE809D6F142FC8B200C073B2 /* UIKit.framework in Frameworks */,
-				CE809D71142FC8B200C073B2 /* Foundation.framework in Frameworks */,
-				CE809D73142FC8B200C073B2 /* CoreGraphics.framework in Frameworks */,
+				CE4808A41440A5D7001DD09F /* UIKit.framework in Frameworks */,
+				CE4808A61440A5D7001DD09F /* Foundation.framework in Frameworks */,
+				CE4808A81440A5D7001DD09F /* CoreGraphics.framework in Frameworks */,
+				CE72DB761440B6A100EC1977 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE809D5F142FC8B200C073B2 = {
+		CE4808941440A5D7001DD09F = {
 			isa = PBXGroup;
 			children = (
-				CE809D8E142FC92900C073B2 /* Category */,
-				CE809D74142FC8B200C073B2 /* DDGActivity */,
-				CE809D6D142FC8B200C073B2 /* Frameworks */,
-				CE809D6B142FC8B200C073B2 /* Products */,
+				CE5150831440A6D40020E2AA /* Category */,
+				CE4808A91440A5D7001DD09F /* DDGActivity */,
+				CE72DB711440B6A100EC1977 /* TestFlight-SDK */,
+				CE4808A21440A5D7001DD09F /* Frameworks */,
+				CE4808A01440A5D7001DD09F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CE809D6B142FC8B200C073B2 /* Products */ = {
+		CE4808A01440A5D7001DD09F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE809D6A142FC8B200C073B2 /* DDGActivity.app */,
+				CE48089F1440A5D7001DD09F /* DDGActivity.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE809D6D142FC8B200C073B2 /* Frameworks */ = {
+		CE4808A21440A5D7001DD09F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE809D6E142FC8B200C073B2 /* UIKit.framework */,
-				CE809D70142FC8B200C073B2 /* Foundation.framework */,
-				CE809D72142FC8B200C073B2 /* CoreGraphics.framework */,
+				CE4808A31440A5D7001DD09F /* UIKit.framework */,
+				CE4808A51440A5D7001DD09F /* Foundation.framework */,
+				CE4808A71440A5D7001DD09F /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CE809D74142FC8B200C073B2 /* DDGActivity */ = {
+		CE4808A91440A5D7001DD09F /* DDGActivity */ = {
 			isa = PBXGroup;
 			children = (
-				CE809D7D142FC8B200C073B2 /* DDGActivityAppDelegate.h */,
-				CE809D7E142FC8B200C073B2 /* DDGActivityAppDelegate.m */,
-				CE809D80142FC8B200C073B2 /* MainWindow.xib */,
-				CE809D83142FC8B200C073B2 /* DDGActivityViewController.h */,
-				CE809D84142FC8B200C073B2 /* DDGActivityViewController.m */,
-				CE809D86142FC8B300C073B2 /* DDGActivityViewController.xib */,
-				CE809D75142FC8B200C073B2 /* Supporting Files */,
-				CE809D95142FCF4100C073B2 /* ModalViewController.h */,
-				CE809D96142FCF4100C073B2 /* ModalViewController.m */,
-				CE809D97142FCF4100C073B2 /* ModalViewController.xib */,
+				CE4808B21440A5D7001DD09F /* DDGActivityAppDelegate.h */,
+				CE4808B31440A5D7001DD09F /* DDGActivityAppDelegate.m */,
+				CE4808B51440A5D7001DD09F /* MainWindow.xib */,
+				CE4808B81440A5D7001DD09F /* DDGActivityViewController.h */,
+				CE4808B91440A5D7001DD09F /* DDGActivityViewController.m */,
+				CE4808BB1440A5D7001DD09F /* DDGActivityViewController.xib */,
+				CE5150901440A8070020E2AA /* ModalViewController.h */,
+				CE5150911440A8070020E2AA /* ModalViewController.m */,
+				CE51508F1440A8070020E2AA /* ModalViewController.xib */,
+				CE4808AA1440A5D7001DD09F /* Supporting Files */,
 			);
 			path = DDGActivity;
 			sourceTree = "<group>";
 		};
-		CE809D75142FC8B200C073B2 /* Supporting Files */ = {
+		CE4808AA1440A5D7001DD09F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CEC0CB1B1430B5EB0075D209 /* DDG Square 57x57.png */,
-				CEC0CB1C1430B5EB0075D209 /* DDG Square.png */,
-				CE809D76142FC8B200C073B2 /* DDGActivity-Info.plist */,
-				CE809D77142FC8B200C073B2 /* InfoPlist.strings */,
-				CE809D7A142FC8B200C073B2 /* main.m */,
-				CE809D7C142FC8B200C073B2 /* DDGActivity-Prefix.pch */,
+				CE51508B1440A6F50020E2AA /* DDG Square 57x57.png */,
+				CE51508C1440A6F50020E2AA /* DDG Square.png */,
+				CE4808AB1440A5D7001DD09F /* DDGActivity-Info.plist */,
+				CE4808AC1440A5D7001DD09F /* InfoPlist.strings */,
+				CE4808AF1440A5D7001DD09F /* main.m */,
+				CE4808B11440A5D7001DD09F /* DDGActivity-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CE809D8E142FC92900C073B2 /* Category */ = {
+		CE5150831440A6D40020E2AA /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				CE809D8F142FC92900C073B2 /* UIView+DDG.h */,
-				CE809D90142FC92900C073B2 /* UIView+DDG.m */,
+				CE0D7D671440AF6B00664EF3 /* TestFlightProtocol.h */,
+				CE5150841440A6D40020E2AA /* DDGActivityViewController+TestFlight.h */,
+				CE5150851440A6D40020E2AA /* DDGActivityViewController+TestFlight.m */,
+				CE0D7D681440B06300664EF3 /* DDGView.h */,
+				CE5150861440A6D40020E2AA /* UIView+DDGView.h */,
+				CE5150871440A6D40020E2AA /* UIView+DDGView.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
+		};
+		CE72DB711440B6A100EC1977 /* TestFlight-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				CE72DB721440B6A100EC1977 /* libTestFlight.a */,
+				CE72DB731440B6A100EC1977 /* README.txt */,
+				CE72DB741440B6A100EC1977 /* release_notes.txt */,
+				CE72DB751440B6A100EC1977 /* TestFlight.h */,
+			);
+			path = "TestFlight-SDK";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE809D69142FC8B200C073B2 /* DDGActivity */ = {
+		CE48089E1440A5D7001DD09F /* DDGActivity */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE809D8B142FC8B300C073B2 /* Build configuration list for PBXNativeTarget "DDGActivity" */;
+			buildConfigurationList = CE4808C01440A5D7001DD09F /* Build configuration list for PBXNativeTarget "DDGActivity" */;
 			buildPhases = (
-				CE809D66142FC8B200C073B2 /* Sources */,
-				CE809D67142FC8B200C073B2 /* Frameworks */,
-				CE809D68142FC8B200C073B2 /* Resources */,
+				CE48089B1440A5D7001DD09F /* Sources */,
+				CE48089C1440A5D7001DD09F /* Frameworks */,
+				CE48089D1440A5D7001DD09F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,86 +174,89 @@
 			);
 			name = DDGActivity;
 			productName = DDGActivity;
-			productReference = CE809D6A142FC8B200C073B2 /* DDGActivity.app */;
+			productReference = CE48089F1440A5D7001DD09F /* DDGActivity.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CE809D61142FC8B200C073B2 /* Project object */ = {
+		CE4808961440A5D7001DD09F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = "Donoho Design Group, L.L.C.";
 			};
-			buildConfigurationList = CE809D64142FC8B200C073B2 /* Build configuration list for PBXProject "DDGActivity" */;
+			buildConfigurationList = CE4808991440A5D7001DD09F /* Build configuration list for PBXProject "DDGActivity" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CE809D5F142FC8B200C073B2;
-			productRefGroup = CE809D6B142FC8B200C073B2 /* Products */;
+			mainGroup = CE4808941440A5D7001DD09F;
+			productRefGroup = CE4808A01440A5D7001DD09F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE809D69142FC8B200C073B2 /* DDGActivity */,
+				CE48089E1440A5D7001DD09F /* DDGActivity */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CE809D68142FC8B200C073B2 /* Resources */ = {
+		CE48089D1440A5D7001DD09F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE809D79142FC8B200C073B2 /* InfoPlist.strings in Resources */,
-				CE809D82142FC8B200C073B2 /* MainWindow.xib in Resources */,
-				CE809D88142FC8B300C073B2 /* DDGActivityViewController.xib in Resources */,
-				CE809D99142FCF4100C073B2 /* ModalViewController.xib in Resources */,
-				CEC0CB1D1430B5EB0075D209 /* DDG Square 57x57.png in Resources */,
-				CEC0CB1E1430B5EB0075D209 /* DDG Square.png in Resources */,
+				CE4808AE1440A5D7001DD09F /* InfoPlist.strings in Resources */,
+				CE4808B71440A5D7001DD09F /* MainWindow.xib in Resources */,
+				CE4808BD1440A5D7001DD09F /* DDGActivityViewController.xib in Resources */,
+				CE51508D1440A6F50020E2AA /* DDG Square 57x57.png in Resources */,
+				CE51508E1440A6F50020E2AA /* DDG Square.png in Resources */,
+				CE5150921440A8070020E2AA /* ModalViewController.xib in Resources */,
+				CE72DB771440B6A100EC1977 /* README.txt in Resources */,
+				CE72DB781440B6A100EC1977 /* release_notes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CE809D66142FC8B200C073B2 /* Sources */ = {
+		CE48089B1440A5D7001DD09F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE809D7B142FC8B200C073B2 /* main.m in Sources */,
-				CE809D7F142FC8B200C073B2 /* DDGActivityAppDelegate.m in Sources */,
-				CE809D85142FC8B200C073B2 /* DDGActivityViewController.m in Sources */,
-				CE809D91142FC92900C073B2 /* UIView+DDG.m in Sources */,
-				CE809D98142FCF4100C073B2 /* ModalViewController.m in Sources */,
+				CE4808B01440A5D7001DD09F /* main.m in Sources */,
+				CE4808B41440A5D7001DD09F /* DDGActivityAppDelegate.m in Sources */,
+				CE4808BA1440A5D7001DD09F /* DDGActivityViewController.m in Sources */,
+				CE5150881440A6D40020E2AA /* DDGActivityViewController+TestFlight.m in Sources */,
+				CE5150891440A6D40020E2AA /* UIView+DDGView.m in Sources */,
+				CE5150931440A8070020E2AA /* ModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE809D77142FC8B200C073B2 /* InfoPlist.strings */ = {
+		CE4808AC1440A5D7001DD09F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE809D78142FC8B200C073B2 /* en */,
+				CE4808AD1440A5D7001DD09F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CE809D80142FC8B200C073B2 /* MainWindow.xib */ = {
+		CE4808B51440A5D7001DD09F /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE809D81142FC8B200C073B2 /* en */,
+				CE4808B61440A5D7001DD09F /* en */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		CE809D86142FC8B300C073B2 /* DDGActivityViewController.xib */ = {
+		CE4808BB1440A5D7001DD09F /* DDGActivityViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE809D87142FC8B300C073B2 /* en */,
+				CE4808BC1440A5D7001DD09F /* en */,
 			);
 			name = DDGActivityViewController.xib;
 			sourceTree = "<group>";
@@ -232,7 +264,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CE809D89142FC8B300C073B2 /* Debug */ = {
+		CE4808BE1440A5D7001DD09F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -247,16 +279,16 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		CE809D8A142FC8B300C073B2 /* Release */ = {
+		CE4808BF1440A5D7001DD09F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,34 +296,42 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		CE809D8C142FC8B300C073B2 /* Debug */ = {
+		CE4808C11440A5D7001DD09F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDGActivity/DDGActivity-Prefix.pch";
 				INFOPLIST_FILE = "DDGActivity/DDGActivity-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlight-SDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		CE809D8D142FC8B300C073B2 /* Release */ = {
+		CE4808C21440A5D7001DD09F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDGActivity/DDGActivity-Prefix.pch";
 				INFOPLIST_FILE = "DDGActivity/DDGActivity-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlight-SDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -300,25 +340,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE809D64142FC8B200C073B2 /* Build configuration list for PBXProject "DDGActivity" */ = {
+		CE4808991440A5D7001DD09F /* Build configuration list for PBXProject "DDGActivity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE809D89142FC8B300C073B2 /* Debug */,
-				CE809D8A142FC8B300C073B2 /* Release */,
+				CE4808BE1440A5D7001DD09F /* Debug */,
+				CE4808BF1440A5D7001DD09F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE809D8B142FC8B300C073B2 /* Build configuration list for PBXNativeTarget "DDGActivity" */ = {
+		CE4808C01440A5D7001DD09F /* Build configuration list for PBXNativeTarget "DDGActivity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE809D8C142FC8B300C073B2 /* Debug */,
-				CE809D8D142FC8B300C073B2 /* Release */,
+				CE4808C11440A5D7001DD09F /* Debug */,
+				CE4808C21440A5D7001DD09F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CE809D61142FC8B200C073B2 /* Project object */;
+	rootObject = CE4808961440A5D7001DD09F /* Project object */;
 }

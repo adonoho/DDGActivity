@@ -13,7 +13,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE809D69142FC8B200C073B2"
+               BlueprintIdentifier = "CE48089E1440A5D7001DD09F"
                BuildableName = "DDGActivity.app"
                BlueprintName = "DDGActivity"
                ReferencedContainer = "container:DDGActivity.xcodeproj">
@@ -38,7 +38,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE809D69142FC8B200C073B2"
+            BlueprintIdentifier = "CE48089E1440A5D7001DD09F"
             BuildableName = "DDGActivity.app"
             BlueprintName = "DDGActivity"
             ReferencedContainer = "container:DDGActivity.xcodeproj">
@@ -55,7 +55,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE809D69142FC8B200C073B2"
+            BlueprintIdentifier = "CE48089E1440A5D7001DD09F"
             BuildableName = "DDGActivity.app"
             BlueprintName = "DDGActivity"
             ReferencedContainer = "container:DDGActivity.xcodeproj">
