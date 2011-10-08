@@ -47,28 +47,32 @@
 
 #import "ModalViewController.h"
 
-#import "UIView+DDG.h"
+#import "DDGView.h"
 
 @implementation DDGActivityViewController
 
 - (IBAction) turnOnAction:  (UIButton *) sender {
     
-    self.view.activityIndicator = [[[UIActivityIndicatorView alloc] 
-                                    initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
-                                   autorelease];
-    [self.view addSubview: self.view.activityIndicator];
-    [self.view centerIndicator];
+    UIView<DDGView> *view = (UIView<DDGView> *)self.view;
     
-    [self.view.activityIndicator startAnimating];
+    view.activityIndicator = [[[UIActivityIndicatorView alloc] 
+                               initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
+                              autorelease];
+    [view addSubview: view.activityIndicator];
+    [view centerIndicator];
+    
+    [view.activityIndicator startAnimating];
     
 } // -turnOnAction:
 
 
 - (IBAction) turnOffAction: (UIButton *) sender {
     
-    [self.view.activityIndicator removeFromSuperview];
+    UIView<DDGView> *view = (UIView<DDGView> *)self.view;
     
-    self.view.activityIndicator = nil;
+    [view.activityIndicator removeFromSuperview];
+    
+    view.activityIndicator = nil;
     
 } // -turnOffAction:
 

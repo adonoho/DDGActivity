@@ -45,7 +45,8 @@
 
 #import "ModalViewController.h"
 
-#import "UIView+DDG.h"
+#import "DDGView.h"
+#import "UIView+DDGView.h"
 
 @implementation ModalViewController
 
@@ -63,13 +64,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.view.activityIndicator = [[[UIActivityIndicatorView alloc] 
-                                    initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
-                                   autorelease];
-    [self.view addSubview: self.view.activityIndicator];
-    [self.view centerIndicator];
+    UIView<DDGView> *view = (UIView<DDGView> *)self.view;
     
-    [self.view.activityIndicator startAnimating];
+    view.activityIndicator = [[[UIActivityIndicatorView alloc] 
+                               initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
+                              autorelease];
+    [view addSubview: view.activityIndicator];
+    [view centerIndicator];
+    
+    [view.activityIndicator startAnimating];
     
 } // -viewDidLoad
 

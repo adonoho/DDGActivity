@@ -45,7 +45,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DDGActivityViewController : UIViewController
+#import "TestFlightProtocol.h"
+
+@interface DDGActivityViewController : UIViewController <TestFlight>
 
 - (IBAction) turnOnAction:  (UIButton *) sender;
 - (IBAction) turnOffAction: (UIButton *) sender;
