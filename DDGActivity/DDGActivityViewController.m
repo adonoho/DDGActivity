@@ -1,4 +1,3 @@
-
 //
 //  DDGActivityViewController.m
 //  DDGActivity
@@ -44,13 +43,11 @@
  
  */
 
-#import "DDGActivityViewController.h"
+#import "DDGActivityViewController+DDGTestFlight.h"
 
 #import "ModalViewController.h"
 
-#import "DDGView.h"
-
-NSString *const kTestFlightTeamToken = @"8acf99279583d14642f6d297ae838cea_MzM1MDYyMDExLTEwLTA4IDE2OjE0OjI1LjU1MTA2Ng";
+#import "UIView+DDGView.h"
 
 @implementation DDGActivityViewController
 
@@ -72,6 +69,10 @@ NSString *const kTestFlightTeamToken = @"8acf99279583d14642f6d297ae838cea_MzM1MD
             [view.activityIndicator startAnimating];
         }
     }
+    if ([self conformsToProtocol: @protocol(DDGTestFlight)]) {
+        
+        [self passCheckpoint: [NSString stringWithFormat: @"%s", __PRETTY_FUNCTION__]];
+    }
     
 } // -turnOnAction:
 
@@ -87,6 +88,10 @@ NSString *const kTestFlightTeamToken = @"8acf99279583d14642f6d297ae838cea_MzM1MD
         
         view.activityIndicator = nil;
     }
+    if ([self conformsToProtocol: @protocol(DDGTestFlight)]) {
+        
+        [self passCheckpoint: [NSString stringWithFormat: @"%s", __PRETTY_FUNCTION__]];
+    }
     
 } // -turnOffAction:
 
@@ -98,7 +103,12 @@ NSString *const kTestFlightTeamToken = @"8acf99279583d14642f6d297ae838cea_MzM1MD
                                  bundle: nil] autorelease];
 
     [self presentModalViewController: mvc animated: YES];
-    
+
+    if ([self conformsToProtocol: @protocol(DDGTestFlight)]) {
+        
+        [self passCheckpoint: [NSString stringWithFormat: @"%s", __PRETTY_FUNCTION__]];
+    }
+
 } // -modalViewAction:
 
 @end
