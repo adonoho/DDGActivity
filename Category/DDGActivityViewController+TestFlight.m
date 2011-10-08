@@ -6,7 +6,13 @@
 //  Copyright 2011 Donoho Design Group, L.L.C. All rights reserved.
 //
 
+#import <objc/runtime.h>
+
 #import "DDGActivityViewController+TestFlight.h"
+
+// Associated Reference keys.
+static const char *kLastCheckpointARKey =  "ddgLastCheckpointARKey";
+NSString *const    kLastCheckpointKey   =    @"lastCheckpoint";
 
 #ifdef DEBUG
 
@@ -14,7 +20,25 @@
 
 @implementation DDGActivityViewController (TestFlight)
 
-- (void) addCustomEnvironmentInformation: (NSString *) information forKey: (NSString*)key {
+@dynamic lastCheckpoint;
+
+- (NSString *) lastCheckpoint {
+    
+    return objc_getAssociatedObject(self, kLastCheckpointARKey);
+    
+} // -lastCheckpoint
+
+
+- (void) setLastCheckpoint: (NSString *) lastCheckpoint {
+    
+    objc_setAssociatedObject(self, 
+                             kLastCheckpointARKey, lastCheckpoint, 
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+} // -setLastCheckpoint:
+
+
+- (void) addCustomEnvironmentInformation: (NSString *) information forKey: (NSString*) key {
     
     [TestFlight addCustomEnvironmentInformation: information forKey: key];
     
@@ -39,6 +63,8 @@
     
     [TestFlight passCheckpoint: checkpointName];
     
+    self.lastCheckpoint = checkpointName;
+    
 } // -passCheckpoint:
 
 
@@ -52,7 +78,20 @@
 
 @implementation DDGActivityViewController (TestFlight)
 
-- (void) addCustomEnvironmentInformation: (NSString *) information forKey: (NSString*)key {
+@dynamic lastCheckpoint;
+
+- (NSString *) lastCheckpoint {
+    
+    return nil;
+    
+} // -lastCheckpoint
+
+
+- (void) setLastCheckpoint: (NSString *) lastCheckpoint {
+} // -setLastCheckpoint:
+
+
+- (void) addCustomEnvironmentInformation: (NSString *) information forKey: (NSString*) key {
 } // -addCustomEnvironmentInformation:forKey:
 
 

@@ -1,5 +1,5 @@
 //
-//  UIView+DDG.m
+//  UIView+DDGView.m
 //  DDGActivityView
 //
 //  Created by Andrew Donoho on 2011/09/25.
@@ -45,13 +45,13 @@
 
 #import <objc/runtime.h>
 
-#import "UIView+DDG.h"
+#import "UIView+DDGView.h"
 
 // Associated Reference keys.
 static const char *kActivityIndicatorARKey =  "ddgActivityIndicatorARKey";
 NSString *const    kActivityIndicatorKey   =    @"activityIndicator";
 
-@implementation UIView (DDG)
+@implementation UIView (DDGView)
 
 @dynamic activityIndicator;
 

@@ -1,5 +1,5 @@
 //
-//  UIView+DDG.h
+//  UIView+DDGView.h
 //  DDGActivityView
 //
 //  Created by Andrew Donoho on 2011/09/25.
@@ -44,10 +44,11 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "DDGView.h"
 
 extern NSString *const kActivityIndicatorKey;
 
-@interface UIView (DDG)
+@interface UIView (DDGView) <DDGView>
 
 @property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
 

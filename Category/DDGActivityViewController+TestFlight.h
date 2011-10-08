@@ -6,9 +6,14 @@
 //  Copyright 2011 Donoho Design Group, L.L.C. All rights reserved.
 //
 
+#import "TestFlightProtocol.h"
 #import "DDGActivityViewController.h"
 
-@interface DDGActivityViewController (TestFlight)
+extern NSString *const kLastCheckpointKey;
+
+@interface DDGActivityViewController (TestFlight) <TestFlight>
+
+@property (nonatomic, retain) NSString *lastCheckpoint;
 
 - (void) addCustomEnvironmentInformation: (NSString *) information forKey: (NSString*) key;
 - (void) takeOff: (NSString *) teamToken;
