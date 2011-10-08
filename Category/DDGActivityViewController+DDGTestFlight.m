@@ -1,5 +1,5 @@
 //
-//  DDGActivityViewController+TestFlight.m
+//  DDGActivityViewController+DDGTestFlight.m
 //  DDGActivity
 //
 //  Created by Andrew Donoho on 2011/10/08.
@@ -8,7 +8,7 @@
 
 #import <objc/runtime.h>
 
-#import "DDGActivityViewController+TestFlight.h"
+#import "DDGActivityViewController+DDGTestFlight.h"
 
 // Associated Reference keys.
 static const char *kLastCheckpointARKey =  "ddgLastCheckpointARKey";
@@ -18,7 +18,7 @@ NSString *const    kLastCheckpointKey   =    @"lastCheckpoint";
 
 #import "TestFlight.h"
 
-@implementation DDGActivityViewController (TestFlight)
+@implementation DDGActivityViewController (DDGTestFlight)
 
 @dynamic lastCheckpoint;
 
@@ -76,7 +76,7 @@ NSString *const    kLastCheckpointKey   =    @"lastCheckpoint";
 
 #else
 
-@implementation DDGActivityViewController (TestFlight)
+@implementation DDGActivityViewController (DDGTestFlight)
 
 @dynamic lastCheckpoint;
 

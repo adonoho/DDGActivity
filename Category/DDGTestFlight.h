@@ -1,5 +1,5 @@
 //
-//  TestFlightProtocol.h
+//  DDGTestFlight.h
 //  DDGActivity
 //
 //  Created by Andrew Donoho on 2011/10/08.
@@ -10,9 +10,10 @@
 
 extern NSString *const kLastCheckpointKey;
 
-@protocol TestFlight <NSObject>
+@protocol DDGTestFlight <NSObject>
 
 @optional
+//@required
 
 @property (nonatomic, retain) NSString *lastCheckpoint;
 
