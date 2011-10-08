@@ -16,7 +16,7 @@
 		CE4808B71440A5D7001DD09F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4808B51440A5D7001DD09F /* MainWindow.xib */; };
 		CE4808BA1440A5D7001DD09F /* DDGActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4808B91440A5D7001DD09F /* DDGActivityViewController.m */; };
 		CE4808BD1440A5D7001DD09F /* DDGActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4808BB1440A5D7001DD09F /* DDGActivityViewController.xib */; };
-		CE5150881440A6D40020E2AA /* DDGActivityViewController+TestFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5150851440A6D40020E2AA /* DDGActivityViewController+TestFlight.m */; };
+		CE5150881440A6D40020E2AA /* DDGActivityViewController+DDGTestFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5150851440A6D40020E2AA /* DDGActivityViewController+DDGTestFlight.m */; };
 		CE5150891440A6D40020E2AA /* UIView+DDGView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5150871440A6D40020E2AA /* UIView+DDGView.m */; };
 		CE51508D1440A6F50020E2AA /* DDG Square 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = CE51508B1440A6F50020E2AA /* DDG Square 57x57.png */; };
 		CE51508E1440A6F50020E2AA /* DDG Square.png in Resources */ = {isa = PBXBuildFile; fileRef = CE51508C1440A6F50020E2AA /* DDG Square.png */; };
@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE0D7D671440AF6B00664EF3 /* TestFlightProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlightProtocol.h; sourceTree = "<group>"; };
+		CE0D7D671440AF6B00664EF3 /* DDGTestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; path = DDGTestFlight.h; sourceTree = "<group>"; };
 		CE0D7D681440B06300664EF3 /* DDGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGView.h; sourceTree = "<group>"; };
 		CE48089F1440A5D7001DD09F /* DDGActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDGActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4808A31440A5D7001DD09F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -44,8 +44,8 @@
 		CE4808B81440A5D7001DD09F /* DDGActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGActivityViewController.h; sourceTree = "<group>"; };
 		CE4808B91440A5D7001DD09F /* DDGActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGActivityViewController.m; sourceTree = "<group>"; };
 		CE4808BC1440A5D7001DD09F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DDGActivityViewController.xib; sourceTree = "<group>"; };
-		CE5150841440A6D40020E2AA /* DDGActivityViewController+TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDGActivityViewController+TestFlight.h"; sourceTree = "<group>"; };
-		CE5150851440A6D40020E2AA /* DDGActivityViewController+TestFlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDGActivityViewController+TestFlight.m"; sourceTree = "<group>"; };
+		CE5150841440A6D40020E2AA /* DDGActivityViewController+DDGTestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "DDGActivityViewController+DDGTestFlight.h"; sourceTree = "<group>"; };
+		CE5150851440A6D40020E2AA /* DDGActivityViewController+DDGTestFlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDGActivityViewController+DDGTestFlight.m"; sourceTree = "<group>"; };
 		CE5150861440A6D40020E2AA /* UIView+DDGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDGView.h"; sourceTree = "<group>"; };
 		CE5150871440A6D40020E2AA /* UIView+DDGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDGView.m"; sourceTree = "<group>"; };
 		CE51508B1440A6F50020E2AA /* DDG Square 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DDG Square 57x57.png"; sourceTree = "<group>"; };
@@ -136,9 +136,9 @@
 		CE5150831440A6D40020E2AA /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				CE0D7D671440AF6B00664EF3 /* TestFlightProtocol.h */,
-				CE5150841440A6D40020E2AA /* DDGActivityViewController+TestFlight.h */,
-				CE5150851440A6D40020E2AA /* DDGActivityViewController+TestFlight.m */,
+				CE0D7D671440AF6B00664EF3 /* DDGTestFlight.h */,
+				CE5150841440A6D40020E2AA /* DDGActivityViewController+DDGTestFlight.h */,
+				CE5150851440A6D40020E2AA /* DDGActivityViewController+DDGTestFlight.m */,
 				CE0D7D681440B06300664EF3 /* DDGView.h */,
 				CE5150861440A6D40020E2AA /* UIView+DDGView.h */,
 				CE5150871440A6D40020E2AA /* UIView+DDGView.m */,
@@ -183,6 +183,7 @@
 		CE4808961440A5D7001DD09F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Donoho Design Group, L.L.C.";
 			};
 			buildConfigurationList = CE4808991440A5D7001DD09F /* Build configuration list for PBXProject "DDGActivity" */;
@@ -228,7 +229,7 @@
 				CE4808B01440A5D7001DD09F /* main.m in Sources */,
 				CE4808B41440A5D7001DD09F /* DDGActivityAppDelegate.m in Sources */,
 				CE4808BA1440A5D7001DD09F /* DDGActivityViewController.m in Sources */,
-				CE5150881440A6D40020E2AA /* DDGActivityViewController+TestFlight.m in Sources */,
+				CE5150881440A6D40020E2AA /* DDGActivityViewController+DDGTestFlight.m in Sources */,
 				CE5150891440A6D40020E2AA /* UIView+DDGView.m in Sources */,
 				CE5150931440A8070020E2AA /* ModalViewController.m in Sources */,
 			);
@@ -283,7 +284,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -300,7 +301,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -313,6 +314,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDGActivity/DDGActivity-Prefix.pch";
 				INFOPLIST_FILE = "DDGActivity/DDGActivity-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestFlight-SDK\"",
@@ -328,6 +330,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDGActivity/DDGActivity-Prefix.pch";
 				INFOPLIST_FILE = "DDGActivity/DDGActivity-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestFlight-SDK\"",
