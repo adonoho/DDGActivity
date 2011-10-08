@@ -14,6 +14,8 @@
 static const char *kLastCheckpointARKey =  "ddgLastCheckpointARKey";
 NSString *const    kLastCheckpointKey   =    @"lastCheckpoint";
 
+NSString *const kTestFlightTeamToken = @"8acf99279583d14642f6d297ae838cea_MzM1MDYyMDExLTEwLTA4IDE2OjE0OjI1LjU1MTA2Ng";
+
 #ifdef DEBUG
 
 #import "TestFlight.h"

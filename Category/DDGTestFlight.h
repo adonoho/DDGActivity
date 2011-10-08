@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *const kTestFlightTeamToken;
+
 extern NSString *const kLastCheckpointKey;
 
 @protocol DDGTestFlight <NSObject>
 
-@optional
-//@required
+@required
 
 @property (nonatomic, retain) NSString *lastCheckpoint;
 

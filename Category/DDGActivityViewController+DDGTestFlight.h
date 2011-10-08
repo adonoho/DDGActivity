@@ -22,4 +22,3 @@ extern NSString *const kLastCheckpointKey;
 - (void) openFeedbackView;
 
 @end
-
