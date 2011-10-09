@@ -47,13 +47,14 @@
 
 #import "DDGTestFlight.h"
 #import "DDGView.h"
-#import "UIView+DDGView.h"
 
 @implementation ModalViewController
 
 - (IBAction) dismissAction: (UIButton *) sender {
     
     if ([self.parentViewController conformsToProtocol: @protocol(DDGTestFlight)]) {
+        
+        // Note: the modal view only needs to check if it implements the @protocol.
         
         [(id<DDGTestFlight>)self.parentViewController 
          passCheckpoint: [NSString stringWithFormat: @"%s", __PRETTY_FUNCTION__]];
@@ -65,12 +66,13 @@
 
 #pragma mark - View lifecycle
 
+
 - (void) viewDidLoad {
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    // For pedagogical purposes, check whether the @protocol is implemented.
+    // Check whether the @protocol is implemented.
     if ([self.view conformsToProtocol: @protocol(DDGView)]) {
         
         UIView<DDGView> *view = (UIView<DDGView> *)self.view;

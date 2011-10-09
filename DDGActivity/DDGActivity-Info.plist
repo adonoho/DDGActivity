@@ -13,7 +13,7 @@
 	<key>CFBundleIconFile</key>
 	<string>DDG Square 57x57.png</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.ddg.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.ddg.DDGActivity</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

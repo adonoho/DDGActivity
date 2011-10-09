@@ -1,16 +1,17 @@
 Object oriented languages have always allowed a programmer to add both methods and ivars to any class. Apple recommends you should not over-ride some Cocoa/Cocoa Touch classes. Hence, you cannot use inheritance to add ivars and methods to those classes. Of course, Objective-C has always offered the category mechanism as a way to add arbitrary methods to any class. But historically, categories cannot add ivars. Apple has addressed this in the modern Objective-C runtime with a mechanism called associated references. I have tested this code on iOS v4+.
 
-The example app shows you how use an associated reference to add a `UIActivityIndicatorView` to every `UIView`, just as if it was any other ivar.
+The example app shows you how use an associated reference to add a `UIActivityIndicatorView` to every `UIView`, just as if it was any other ivar. This project has been updated to implement proper protocols for these categories. Also, the project has been extended from the original to support the TestFlight Ad Hoc distribution system. You can learn more about TestFlight at <http://TestFlightApp.com>. The extensions are covered in the `Mix-in.md` file in the project and at this blog post: <http://bit.ly/Mix-in>.
 
-### `UIView (DDG)` category
+### `UIView (DDGView) <DDGView>` category
 
 This category adds an `@property` and a method, `-centerIndicator` to a `UIView`. Here is the header:
 
 	#import <UIKit/UIKit.h>
+    #import "DDGView.h"
 	
 	extern NSString *const kActivityIndicatorKey;
 	
-	@interface UIView (DDG)
+	@interface UIView (DDGView) <DDGView>
 	
 	@property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
 	
@@ -24,18 +25,32 @@ As we are using an `@property`, I also add a constant string key to support key-
 
 Here I create an `activityIndicator` and add it to a `UIViewController`'s `UIView`.
 
-	self.view.activityIndicator = [[[UIActivityIndicatorView alloc] 
-									initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
-								   autorelease];
-	[self.view addSubview: self.view.activityIndicator];
-	[self.view centerIndicator];
-	
-	[self.view.activityIndicator startAnimating];
+    if ([self.view conformsToProtocol: @protocol(DDGView)]) {
+        
+        UIView<DDGView> *view = (UIView<DDGView> *)self.view;
+        
+        if (!view.activityIndicator) {
+            
+            view.activityIndicator = [[[UIActivityIndicatorView alloc] 
+                                       initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleGray] 
+                                      autorelease];
+            [view addSubview: view.activityIndicator];
+            [view centerIndicator];
+            
+            [view.activityIndicator startAnimating];
+        }
+    }
 
 Here I release the activity indicator:
 
-	[self.view.activityIndicator removeFromSuperview];
-	self.view.activityIndicator = nil;
+    if ([self.view conformsToProtocol: @protocol(DDGView)]) {
+        
+        UIView<DDGView> *view = (UIView<DDGView> *)self.view;
+        
+        [view.activityIndicator removeFromSuperview];
+        
+        view.activityIndicator = nil;
+    }
 
 That is straightforward and is used no differently from any other ivar that contains a `UIActivityIndicatorView`.
 
